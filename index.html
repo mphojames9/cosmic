@@ -84,15 +84,14 @@
 
         /* Tactical HUD System */
         #top-hud {
-            position: absolute; top: 0; left: 0; width: 100%;
-            padding: 15px 25px; box-sizing: border-box;
-            display: flex; justify-content: space-between; align-items: flex-start;
-            z-index: 5; pointer-events: none;
-            background: rgba(2, 0, 5, 0.3);
-            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 229, 255, 0.15);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-        }
+    position: absolute; top: 0; left: 0; width: 100%;
+    padding: 15px 25px; box-sizing: border-box;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    z-index: 5; pointer-events: none;
+    background: rgba(2, 0, 5, 0.8); /* Opacity increased from 0.3 to 0.8 for better readability without the blur */
+    border-bottom: 1px solid rgba(0, 229, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
 
         .hud-block { display: flex; flex-direction: column; }
         .hud-row { display: flex; align-items: center; gap: 15px; }
